@@ -2,19 +2,19 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package helloworld;
-
+package jetsetgo;
 /**
  *
  * @author megh
  */
-public class HelloWorld {
+public class JetSetGo {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         // TODO code application logic here
-        System.out.println("Hello World");
+        MySql dao = new MySql();
+        dao.readDataBase();
     }
 }
